@@ -1,0 +1,27 @@
+{
+  "name": "playwright-test-automation",
+  "version": "1.0.0",
+  "description": "This Playwright project is an automated testing framework specifically designed to support the Thinkwise Testwise platform. It enables efficient and reliable end-to-end testing of Thinkwise applications by leveraging Playwright's capabilities for cross-browser automation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iautomatenl/playwright-test-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iautomatenl/playwright-test-automation/issues"
+  },
+  "homepage": "https://github.com/iautomatenl/playwright-test-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
