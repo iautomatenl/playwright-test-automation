@@ -1,9 +1,44 @@
-# Playwright Automated Testing Framework for Thinkwise Testwise
+# Playwright Test Framework
 
-## Project Description
+## Overview
 
-This Playwright project is an automated testing framework specifically designed to support the Thinkwise Testwise platform. It enables efficient and reliable end-to-end testing of Thinkwise applications by leveraging Playwright's capabilities for cross-browser automation.
+This is a Playwright-based test automation framework designed to facilitate end-to-end testing of web applications. It provides a scalable, maintainable, and efficient setup for writing and running automated UI tests.
 
-The framework provides a robust structure for writing, organizing, and executing UI tests that validate the functionality, performance, and user experience of Thinkwise Testwise projects. It incorporates best practices such as the Page Object Model pattern, test fixtures, and parallel test execution to ensure scalability and maintainability.
+## Features
 
-By automating repetitive testing tasks, this framework helps reduce manual effort, accelerate release cycles, and improve overall software quality within the Thinkwise development lifecycle.
+- Cross-browser testing (Chromium, Firefox, WebKit)
+- Parallel test execution
+- Built-in retries and timeout management
+- Screenshot and video capture on failure
+- Page Object Model support
+- Integration with CI/CD pipelines
+
+## Prerequisites
+
+- Node.js (version >= 14.x)
+- npm or yarn package manager
+- Supported browsers installed or configured via Playwright
+
+## Installation
+
+Clone the repository:
+
+   ```bash
+   git clone https://github.com/iautomatenl/playwright-test-automation.git
+   cd your-repo-folder
+   ```
+
+## Utilities
+
+This framework includes several utility modules designed to support common testing tasks, enhancing code reuse and improving readability.
+
+<details>
+<summary><strong>logger.ts</strong></summary>
+
+`logger.ts` is a centralized logging utility that standardizes log output across all tests. Features include:
+
+- Support for multiple log levels: info, warning, error  
+- Configurable output destinations (console, files)  
+- Improved debugging and traceability during test execution  
+
+</details>
