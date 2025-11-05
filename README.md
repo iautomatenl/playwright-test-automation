@@ -42,3 +42,19 @@ This framework includes several utility modules designed to support common testi
 - Improved debugging and traceability during test execution  
 
 </details>
+
+<details>
+<summary><strong>waitForCondition.ts</strong></summary>
+
+`waitForCondition.ts` function is a utility designed to repeatedly check a specified condition until it becomes true or a timeout is reached. It works as follows:
+
+- Accepts a **condition function** (`conditionFn`) that can be synchronous or asynchronous and returns a boolean indicating whether the condition is met.
+- Retries calling this condition function at regular **intervals** (default: 100 milliseconds).
+- Continues retrying until:
+  - The condition function returns `true`, resolving successfully and exiting the function.
+  - The total elapsed time exceeds the specified **timeout** period (default: 5000 milliseconds), throwing an error to indicate a timeout.
+- Catches and ignores errors thrown by the condition function during execution, allowing retries until the timeout.
+
+Useful for waiting dynamically for a certain state or event (e.g., API response, UI element state, backend condition) during automated tests or asynchronous workflows.
+
+</details>
